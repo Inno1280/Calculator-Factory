@@ -1,13 +1,13 @@
 
-$(document).keypress(function(event) {
-    let keyPressed = event.key;
-    if (!isNaN(parseInt(keyPressed)) || "+-*/".includes(keyPressed)) {
-        appendDisplay(keyPressed);
-    }
-});
+// $(document).keypress(function(event) {
+//     let keyPressed = event.key;
+//     if (!isNaN(parseInt(keyPressed)) || "+-*/".includes(keyPressed)) {
+//         appendDisplay(keyPressed);
+//     }
+// });
 
 $("button").on("click touchstart", function() {
-    let buttonValue = $(this).text();
+    let buttonValue = $(this).text(input);
     appendDisplay(buttonValue);
 })
 
