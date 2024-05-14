@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claculator Factory</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Fondamento:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="calculator" id="calculator">
+        <input id="display" type="text" placeholder="0" readonly> 
+        <div id="keys">
+            <button class="special" onclick="squareOf()">x²</button>
+            <button class="special" onclick="inverse()">1/x</button>
+            <button class="special" onclick="rootOfElement()">√x</button>
+            <button class="special" onclick="percentage()">%</button>
+            <button class="operator" onclick="appendDisplay('÷')">÷</button>
+            <button class="operator" onclick="appendDisplay('+')">+</button>
+            <button class="operator" onclick="appendDisplay('-')">-</button>
+            <button class="operator" onclick="appendDisplay('*')">x</button> 
+            <button onclick="appendDisplay('7')">7</button>
+            <button onclick="appendDisplay('8')">8</button>
+            <button onclick="appendDisplay('9')">9</button>
+            <button class="eraser" onclick="deleteDisplay()">del</button>
+            <button onclick="appendDisplay('4')">4</button>
+            <button onclick="appendDisplay('5')">5</button>
+            <button onclick="appendDisplay('6')">6</button>
+            <button class="eraser" onclick="clearDisplay('C')">C</button>
+            <button onclick="appendDisplay('1')">1</button>
+            <button onclick="appendDisplay('2')">2</button>
+            <button onclick="appendDisplay('3')">3</button>
+            <button id="equal-to" onclick="calculate('=')">=</button>
+            <button onclick="appendDisplay('.')">.</button>
+            <button onclick="appendDisplay('0')">0</button>
+            
+        </div>
+    </div>
+
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
