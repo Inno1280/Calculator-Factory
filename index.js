@@ -21,7 +21,7 @@ function appendDisplay(input) {
 
 // Code that clears the entire display
 function clearDisplay() {
-    $("#display").val("0");      
+    $("#display").val("");      
 }
 
 // Code that deletes the last character on the display
