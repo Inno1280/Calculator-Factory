@@ -6,7 +6,7 @@ $(document).keypress(function(event) {
     }
 });
 
-$("button").click(function() {
+$("button").on("click touchstart", function() {
     let buttonValue = $(this).text();
     appendDisplay(buttonValue);
 })
