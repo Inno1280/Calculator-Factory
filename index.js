@@ -6,7 +6,7 @@ $(document).keypress(function(event) {
     }
 });
 
-$(document).click(function() {
+$("button").click(function() {
     let buttonValue = $(this).text();
     appendDisplay(buttonValue);
 })
